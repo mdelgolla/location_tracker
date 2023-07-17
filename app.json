@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "location_app",
+    "name": "Location App",
     "slug": "location_app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,13 +15,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dms.locationApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dms.location_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
