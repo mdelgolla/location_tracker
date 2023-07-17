@@ -1,6 +1,4 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./src/reducers/root_reducer";
 import thunk from "redux-thunk";
@@ -10,11 +8,6 @@ import { ThemeProvider } from "@ant-design/react-native/lib/style";
 
 const store = configureStore({ reducer: rootReducer, middleware: [thunk] });
 
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <App />
-//   </Provider>,
-//   document.getElementById("root")
 // );
 export default function App() {
   return (
